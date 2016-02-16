@@ -1,0 +1,14 @@
+073048a3332f501124d946d62726a891 *DESCRIPTION
+5eabdc65154598f43e0c433520a8b1d1 *NAMESPACE
+524d2cb4183a68a6d0f2bd41f021619a *NEWS.md
+1b5e8953d71448eefc7d7cdf4e5505a9 *R/cos_prereg.R
+38aa1ff516d8b517abeabd6a36d9d94c *R/prereg.R
+3a7ab9b79bb4b566594a23fda30fbe4c *README.md
+870091e0073650666aace2f2e7a1268e *inst/rmarkdown/templates/cos_prereg/resources/apa6.csl
+b91289663ed8b74637928b28a5876271 *inst/rmarkdown/templates/cos_prereg/resources/cos_prereg.tex
+8c4377642c9107785498b0d24d305abc *inst/rmarkdown/templates/cos_prereg/skeleton/skeleton.Rmd
+15e63a74bbd1029fff4be036a2948341 *inst/rmarkdown/templates/cos_prereg/template.yaml
+148759d73b3a41d9bd12da1df038615b *man/cos_prereg.Rd
+46301304c841a1d36895419359183c9b *man/prereg.Rd
+3b77217e19e0b2e4ca576be5ba93202c *tests/test_prereg.R
+92107245fe85e56a572a9ef4cbe68a32 *tests/testthat/test_skeleton.R
