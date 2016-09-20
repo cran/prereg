@@ -1,0 +1,39 @@
+test_that(
+  "Knit COS skeleton"
+  , {
+    skip_on_cran()
+
+    # Render skeleton
+    rmarkdown::draft(
+      "cos_skeleton.Rmd"
+      , "cos_prereg"
+      , package = "prereg"
+      , create_dir = FALSE
+      , edit = FALSE
+    )
+    rmarkdown::render("cos_skeleton.Rmd")
+
+    # Clean up
+    file.remove(list.files(pattern = "cos"))
+  }
+)
+
+test_that(
+  "Knit AsPredicted skeleton"
+  , {
+    skip_on_cran()
+
+    # Render skeleton
+    rmarkdown::draft(
+      "aspredicted_skeleton.Rmd"
+      , "aspredicted_prereg"
+      , package = "prereg"
+      , create_dir = FALSE
+      , edit = FALSE
+    )
+    rmarkdown::render("aspredicted_skeleton.Rmd")
+
+    # Clean up
+    file.remove(list.files(pattern = "aspredicted"))
+  }
+)
