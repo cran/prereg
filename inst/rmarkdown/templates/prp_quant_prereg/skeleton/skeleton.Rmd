@@ -1,5 +1,5 @@
 ---
-title           : "My preregistration based on the Preregistration for Quantitative Research in Psychology Template^[This document was created using the **Preregistration for Quantitative Research in Psychology Template**. The template was developed by a task force composed of members of the American Psychological Association (APA), the British Psychological Society (BPS), the German Psychological Society (DGPs), the Center for Open Science (cos), and the Leibniz Institute for Psychology (ZPID). This work is licensed under the CC BY-NC-SA 4.0 license. To view a copy of the license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/.]"
+title           : "My preregistration based on the Psychological Research Preregistration-Quantitative (aka PRP-QUANT) Template^[This document was created using the Psychological Research Preregistration-Quantitative (aka PRP-QUANT) Template, version 2 (available at https://www.psycharchives.org/). The template was developed by a task force composed of members of the American Psychological Association (APA), the British Psychological Society (BPS), the German Psychological Society (DGPs), the Center for Open Science (COS), and the Leibniz Institute for Psychology (ZPID). This work is licensed under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). Thus, you are free to share and adapt the content, given that you attribute the source and indicate if changes were made.]"
 shorttitle      : "My preregistration"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 
@@ -15,10 +15,7 @@ affiliation:
   - id          : 2
     institution : Konstanz Business School
 
-header-includes: |
-  \setlength{\headheight}{14.0pt}
-
-output: prereg::psyquant_prereg
+output: prereg::prereg_pdf
 ---
 
 <!-- Below you find an implementation of the Preregistration for Quantitative Research in Psychology Template (https://bit.ly/32lZYtx) as an R Markdown template (included in the 'prereg' package). 
@@ -232,14 +229,14 @@ Enter your response here.
 
 ## M4
 ### Participant recruitment, selection, and compensation
-<!-- Indicate (a) methods of recruitment (e.g., subject pool advertisement, community events, crowdsourcing platforms, snowball sampling); (b) selection and inclusion/exclusion criteria (e.g., age, visual acuity, language facility); (c) details of any stratification sampling used; (d) planned participant characteristics (Gender, Race/Ethnicity, Sexual Orientation and Gender Identity, SES, education level, age, disability or health status, geographic location); (e) compensation amount and method (e.g., same payment to all, pay based on performance, lottery). -->
+<!-- Indicate (a) methods of recruitment (e.g., subject pool advertisement, community events, crowdsourcing platforms, snowball sampling); (b) selection and inclusion/exclusion criteria (e.g., age, visual acuity, language facility); (c) details of any stratification sampling used; (d) planned participant characteristics (gender, race/ethnicity, sexual orientation and gender identity, SES, education level, age, disability or health status, geographic location); (e) compensation amount and method (e.g., same payment to all, pay based on performance, lottery). -->
 
 Enter your response here.
 
 
 ## M5
 ### How will participant drop-out be handled?
-<!-- Indicate any special treatment for participants who drop out (e.g., they are deleted from the data file entirely; there is follow-up in a manner different from the main sample) or whether participants are replaced. -->
+<!-- Indicate any special treatment for participants who drop out (e.g., there is follow-up in a manner different from the main sample, last value carried forward) or whether participants are replaced. -->
 
 Enter your response here.
 
@@ -260,7 +257,7 @@ Enter your response here.
 
 ## M8
 ### How will missing data be handled?
-<!-- Indicate (a) case deletions; (b) averaging across scale items (to handle missing items for some); (c) test of missingness (MAR, MCAR, MNAR assumptions; (d) imputation procedures (FIML vs. MI); (e) Intention to treat analysis and per protocol analysis (as appropriate). -->
+<!-- Indicate any procedures that will be applied during the analysis to deal with missing data, such as (a) case deletions; (b) averaging across scale items (to handle missing items for some); (c) test of missingness (MAR, MCAR, MNAR assumptions; (d) imputation procedures (FIML vs. MI); (e) Intention to treat analysis and per protocol analysis (as appropriate) -->
 
 Enter your response here.
 
@@ -288,7 +285,7 @@ Enter your response here.
 
 ## M12
 ### Measured variables, manipulated variables, covariates
-<!-- This section shall be used to unambiguously clarify which variables are used to operationalize the hypotheses specified above (item I3). Please (a) list all measured variables, and (b) explicitly state the functional role of each variable (i.e., independent variable, dependent variable, covariate, mediator, moderator). It is important to (c) specify for each hypothesis how it is operationalized, i.e., which variables will be used to test the respective hypothesis and how the hyothesis will be operationally defined in terms of these variables. The description here shall be consistent with the statistical analysis plans specified under AP5 (below). -->
+<!-- This section shall be used to unambiguously clarify which variables are used to operationalize the hypotheses specified above (item I3). Please (a) list all measured variables, and (b) explicitly state the functional role of each variable (i.e., independent variable, dependent variable, covariate, mediator, moderator). It is important to (c) specify for each hypothesis how it is operationalized, i.e., which variables will be used to test the respective hypothesis and how the hyothesis will be operationally defined in terms of these variables. The description here shall be consistent with the statistical analysis plans specified under AP6 (below). -->
 
 Enter your response here.
 
@@ -341,33 +338,38 @@ Enter your response here.
 
 ## AP4
 ### Reliability analysis (if applicable)
-<!-- Specify the type of scale reliability that will be estimated, whether it is internal consistency (e.g. Cronbachs alpha, omega), test-retest reliability, or some other form (e.g., a confirmatory factor analysis incorporating multiple factors as sources of variance). In a study involving measure development, researchers should specify criteria for removing items from measures a priori (e.g., largest factor loading magnitude, smallest drop in alpha-if-item removed). -->
+<!-- Specify the type of scale reliability that will be estimated, whether it is internal consistency (e.g. Cronbach's alpha, omega), test-retest reliability, or some other form (e.g., a confirmatory factor analysis incorporating multiple factors as sources of variance). In a study involving measure development, researchers should specify criteria for removing items from measures a priori (e.g., largest factor loading magnitude, smallest drop in alpha-if-item removed). -->
 
 Enter your response here.
 
 
 ## AP5
+### Descriptive statistics
+<!-- Specify which descriptive statistics will be calculated for which variables. If appropriate, specify which indices of effect size will be used. If descriptive statistics are linked to specific hypotheses, explicitly link the information given here to the respective hypothesis.-->
+
+
+## AP6
 ### Statistical models (provide for each hypothesis if varies)
 <!-- Specify the statistical model (e.g. t test, ANOVA, LMM) that will be used to test each of your hypotheses. Give all necessary information about model specification (e.g., variables, interactions, planned contrasts) and follow-up analyses. Include model selection criteria (e.g., fit indices), corrections for multiple testing, and tests for statistical violations, if applicable. Wherever unclear, describe how effect sizes will be calculated (e.g., for d-values, use the control SD or the pooled SD). -->
 
 Enter your response here.
 
 
-## AP6
+## AP7
 ### Inference criteria
 <!-- Specify the criteria used for inferences (e.g., p values, Bayes factors, effect size measures) and the thresholds for accepting or rejecting your hypotheses. If possible, define a smallest effect size of interest. If inference criteria differ between hypotheses, specify separately for each hypothesis and respective statistical model by explicitly referring to the numbers of the hypotheses. Describe which effect size measures will be reported and how they are calculated. -->
 
 Enter your response here.
 
 
-## AP7
+## AP8
 ### Exploratory analysis (optional)
 <!-- Describe any exploratory analyses to be conducted with your data. Include here any planned analyses that are not confirmatory in the sense of being a direct test of one of the specified hypotheses. -->
 
 Enter your response here.
 
 
-## AP8
+## AP9
 ### Other information (optional)
 
 Enter your response here.

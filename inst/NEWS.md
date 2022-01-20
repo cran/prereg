@@ -1,3 +1,17 @@
+# prereg 0.6.0
+
+- New fMRI preregistration template suggested by Jessica Flannery (#11, @LisaSpitzer)
+- New PRP-QUANT preregistration template (#19, @LisaSpitzerZPID)
+- New Application of Cognitive Models preregistration template suggested by Crüwell & Evans (2021)
+- Updates AsPredicted.org template (#17, @JeffreyRStevens)
+- All templates now support additional pandoc options (#24, #26 @CLRafaelR):
+  - `number_sections`
+  - `mainfontoptions`
+  - `sansfontoptions`
+  - `monofontoptions`
+  - `mathfontoptions`
+  - `CJKfontoptions`
+
 # prereg 0.5.0
 
 - New template for preregistration of Registered Reports (based on: https://osf.io/93znh/). See `?rr_prereg`. (suggested by @crsh #4, PR by @LisaSpitzer, #10)
